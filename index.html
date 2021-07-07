@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동아리 페스티벌</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<div class="bottom-bar shadow">
+    <div class="items" id="F1">
+        <img src="imgs/User.svg" alt="사용자">
+    </div>
+    <div id='F2' class="items" style="border-left: 0.1px solid grey; border-right: 0.1px solid grey;">
+        <img src="imgs/Home.svg" alt="부스목록">
+    </div>
+    <div class="items" id="F3">
+        <img src="imgs/User.svg" alt="지도">
+    </div>
+
+    
+</div>
+<body>
+
+    <div id="User-inform">
+        <div class="img shadow f15 b6">?</div>
+        <h1 class="name">사용자 로그인</h1>
+    </div>
+
+    <div id="Login">
+      <div class="box blur shadow">
+            <div class="login">
+             <label>아이디</label>
+             <input type="email" placeholder="아이디를 입력하세요.">
+             <br><br>
+             <label>비밀번호</label>
+             <input type="password" placeholder="비밀번호를 입력하세요.">
+            </div>
+        </div><br><br><br>
+        <button class="login-btn b6 f3 shadow">Login</button>
+    </div>
+
+
+
+    <div id="User">
+        <div class="box blur shadow">
+            <h4 class='b2' style="margin-left: 30px;">나의 총 점수</h4><br>
+            <h1 class="score-text">0<span class="f3">점</span></h1>
+        </div><br>
+        <label class='f3' style="margin-left: 20px;">활동 내역</label><div style="height: 5px;"></div>
+        <span id="AddHistory">
+            <div class="box shadow blur">
+                <h5 class="act-text f3">????활동</h5>
+                <h5 class="act-score-text">+10점</h5>
+            </div><div style="height: 10px;"></div>
+
+            <div class="box shadow blur">
+                <h5 class="act-text f3">????활동</h5>
+                <h5 class="act-score-text">+10점</h5>
+            </div><div style="height: 10px;"></div>
+
+            <div class="box shadow blur">
+                <h5 class="act-text f3">????활동</h5>
+                <h5 class="act-score-text">+10점</h5>
+            </div><div style="height: 10px;"></div>
+
+        </span><br>
+        <label class='f3' style="margin-left: 20px;">로그아웃</label><div style="height: 5px;"></div>
+        <div class="box shadow blur" style=" background-color: red;">
+            <h4 style="text-align: center; color:white;">로그아웃</h4>
+        </div>
+        <div style="height: 90px;"></div>
+    </div>
+
+    <div id="Main">
+        <h1 class='f5 b7 title'>동아리 페스티벌<br><span class="b1">2021</span></h1>
+    </div>
+</body>
+<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="script.js"></script>
+</html>

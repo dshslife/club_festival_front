@@ -1,0 +1,171 @@
+body {
+    background-color: rgb(240, 240, 240);
+}
+body * {
+    font-family: 'Gothic A1', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.title {
+    margin-left: 20px;
+    color:black;
+    margin-top: 20px;
+}
+
+.score-text {
+    text-align: right;
+    margin-right: 30px;
+}
+
+.act-text {
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.act-score-text {
+    color:rgb(3, 161, 3);
+    display: inline-block;
+}
+
+.items {
+    width: 100%;
+    height: 80%;
+    margin-top: 5px;
+}
+
+.items > img {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    left: 50%;
+    top:50%;
+    margin-left:-15px;
+    margin-top:-15px;
+}
+
+.bottom-bar {
+    background-color: rgba(250, 250, 250);
+    z-index: 10;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: fixed;
+    width: 95vw;
+    height: 60px;
+    bottom: 0px;
+    left: 50%;
+    margin-left: -47.5vw;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+.login {
+    position: relative;
+    left: 50%;
+    width: 80%;
+    margin-left: -40%;
+}
+
+.box {
+    width: 90%;
+    position: relative;
+    left: 50%;
+    margin-left: -45%;
+    border: 20px;
+    background-color: rgba(250, 250, 250, 1);
+    border-radius: 20px;
+    padding: 20px 0px;
+}
+
+.img {
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    position: relative;
+    left: 50%;
+    margin-left: -65px;
+    margin-top: 60px;
+    text-align: center;
+    line-height: 130px;
+    color:white;
+}
+
+.name {
+    text-align: center;
+    margin: 10px 0px 70px 0px;
+}
+
+.login-btn {
+    width: 120px;
+    height: 45px;
+    border-radius: 30px;
+    border: 0px;
+    background: linear-gradient(to right, #F27121, #E94057, #8A2387);
+    color:white;
+    position: relative;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.login > input {
+    width: 100%;
+}
+
+label {
+    font-size: 13px;
+}
+
+input {
+    border-radius: 20px;
+    text-align: center;
+    border: 0px;
+    height: 40px;
+    background-color: rgb(245, 245, 245);
+}
+
+.f1 {font-size: 5px;}
+.f2 {font-size: 10px;}
+.f3 {font-size: 15px;}
+.f4 {font-size: 20px;}
+.f5 {font-size: 25px;}
+.f6 {font-size: 30px;}
+.f7 {font-size: 35px;}
+.f8 {font-size: 40px;}
+.f9 {font-size: 45px;}
+.f10 {font-size: 50px;}
+.f11 {font-size: 55px;}
+.f12 {font-size: 60px;}
+.f13 {font-size: 65px;}
+.f14 {font-size: 70px;}
+.f15 {font-size: 75px;}
+.f16 {font-size: 80px;}
+.f17 {font-size: 85px;}
+.f18 {font-size: 90px;}
+.f19 {font-size: 95px;}
+.f20 {font-size: 100px;}
+.f21 {font-size: 105px;}
+.f22 {font-size: 110px;}
+.f23 {font-size: 115px;}
+
+.b1 {font-weight: 100;}
+.b2 {font-weight: 200;}
+.b3 {font-weight: 300;}
+.b4 {font-weight: 400;}
+.b5 {font-weight: 500;}
+.b6 {font-weight: 600;}
+.b7 {font-weight: 700;}
+.b8 {font-weight: 800;}
+.b9 {font-weight: 900;}
+
+.shadow { 
+    box-shadow: 0px 0px 27px -20px rgb(61, 61, 61);
+    border: 0.1px solid rgb(240, 240, 240);
+}
+.blur {
+    /* -webkit-backdrop-filter: blur(40px);
+    backdrop-filter: blur(40px); */
+}
