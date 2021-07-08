@@ -7,15 +7,16 @@ function reset() {
 }
 
 
-$('#Map1').hide();
+$('#Map2').hide();
 reset();
 $('#Map').show();
-$('#Map2').show();
+$('#Map1').show();
+
 
 $('#F1').on('click', function() {
     reset();
     $('#User-inform').show();
-    $('#User').show();
+    $('#Login').show();
 });
 
 $('#F2').on('click', function() {
@@ -43,10 +44,15 @@ $('#Lo-btn').on('click', function() {
 
 function select(e) {
     console.log(e.value);
-    if (e.value == 1) {
+    if (e.value == 0) {
         reset();
+        $('#Map').show();
         $('#Map1').show();
+        $('#Map2').hide();
     } else {
+        reset();
+        $('#Map').show();
         $('#Map2').show();
+        $('#Map1').hide();
     }
 }
