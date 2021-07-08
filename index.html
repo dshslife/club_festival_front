@@ -7,6 +7,8 @@
     <title>동아리 페스티벌</title>
     <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/map1-grid.css">
+    <link rel="stylesheet" href="css/map2-grid.css">
 </head>
 <body>
     <div class="bottom-bar shadow">
@@ -17,7 +19,7 @@
             <img src="imgs/Home.svg" alt="부스목록">
         </div>
         <div class="items" id="F3">
-            <img src="imgs/User.svg" alt="지도">
+            <img src="imgs/place.svg" alt="지도">
         </div>
     
         
@@ -73,15 +75,99 @@
     </div>
 
     <div id="Main">
-        <h1 class='f5 b7 title'>동아리 페스티벌<br><span class="b1">2021</span></h1><br>
+        <h1 class='f5 b8 title'>동아리 페스티벌<br><span class="b1">2021</span></h1><br>
+        <hr>
+        
         <div class="box shadow blur">
-            <div class="sample_img"></div>
+            <div class="white"></div>
             <div class="sub">
-                <h2 class="f5 b5">부스명</h2>
+                <div class="status"></div>
+                <h2 class="f4 b7">부스명</h2>
+            </div>
+            <div class="sample_img" style="margin-left:20px;">
+                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg">
+            </div>
+
+
+            <div class="sample_img">
+                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg">
+            </div>
+
+
+            <div class="sample_img">
+                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg">
+            </div>
+
+        </div>
+    </div>
+
+    <div id="Map">
+        <h1 class='f5 b8 title'>동아리 페스티벌<br><span class="b1">2021</span></h1><br>
+        <select name="map shadow" onchange="select(this)">
+            <option value="0">백암관 앞 마당</option>
+            <option value="1">백암관 3층 체육관</option>
+        </select><div style="height: 30px;"></div>
+        <div id="Map1">
+            <div class="map1-grid shadow">
+                <div class="item1 shadow"><h4 class="f4 b4">D-01</h4></div>
+                <div class="item1 shadow"><h4 class="f4 b4">실내</h4></div>
+                <div class="item1 shadow"><h4 class="f4 b4">D-02</h4></div>
+                <div class="item1 shadow"><h4 class="f4 b4">D-03</h4></div>
+                <div class="item1 shadow"><h4 class="f4 b4">D-04</h4></div>
+                <div class="item1 shadow"><h4 class="f4 b4">출입문</h4></div>
+                <div class="item1 shadow"><h4 class="f4 b4">실외</h4></div>
+                <div class="item1 shadow"><h4 class="f4 b4">D-05</h4></div>
+                <div class="item1 shadow"><h4 class="f4 b4">D-06</h4></div>
+                <div class="item1 shadow"><h4 class="f4 b4">D-07</h4></div>
+                <div class="item1 shadow"><h4 class="f4 b4">D-08</h4></div>
+                <div class="item1 shadow"><h4 class="f4 b4">D-09</h4></div>
+                <div class="item1 shadow"><h4 class="f4 b4">D-10</h4></div>
+                <div class="item1 shadow"><h4 class="f4 b4">D-11</h4></div>
+                <div class="item1 shadow"><h4 class="f4 b4">D-12</h4></div>
+
             </div>
         </div>
 
+
+        <div id="Map2">
+            <div class="map2-grid shadow">
+                <div class="item2 shadow"><h4 class="f4 b4">운영본부</h4></div>
+                <div class="item2 shadow"><h4 class="f4 b4">A-01</h4></div>
+                <div class="item2 shadow"><h4 class="f4 b4">A-02</h4></div>
+                <div class="item2 shadow"><h4 class="f4 b4">A-03</h4></div>
+                <div class="item2 shadow"><h4 class="f4 b4">A-04</h4></div>
+                <div class="item2 shadow"><h4 class="f4 b4">A-05</h4></div>
+                <div class="item2 shadow"><h4 class="f4 b4">A-06</h4></div>
+                <div class="item2 shadow"><h4 class="f4 b4">A-07</h4></div>
+                <div class="item2 shadow"><h4 class="f4 b4">A-08</h4></div>
+                <div class="item2 shadow"><h4 class="f4 b4">A-09</h4></div>
+                <div class="item2 shadow"><h4 class="f4 b4">A-10</h4></div>
+
+
+                <div class="item2 shadow"><h4 class="f4 b4">C-01</h4></div>
+                <div class="item2 shadow"><h4 class="f4 b4">C-02</h4></div>
+                <div class="item2 shadow"><h4 class="f4 b4">C-03</h4></div>
+                <div class="item2 shadow"><h4 class="f4 b4">C-04</h4></div>
+                <div class="item2 shadow"><h4 class="f4 b4">C-05</h4></div>
+                <div class="item2 shadow"><h4 class="f4 b4">C-06</h4></div>
+                <div class="item2 shadow"><h4 class="f4 b4">C-07</h4></div>
+                <div class="item2 shadow"><h4 class="f4 b4">C-08</h4></div>
+
+                <div class="item2 shadow"><h4 class="f4 b4">B-01</h4></div>
+                <div class="item2 shadow"><h4 class="f4 b4">B-02</h4></div>
+                <div class="item2 shadow"><h4 class="f4 b4">B-03</h4></div>
+                <div class="item2 shadow"><h4 class="f4 b4">B-04</h4></div>
+                <div class="item2 shadow"><h4 class="f4 b4">B-05</h4></div>
+                <div class="item2 shadow"><h4 class="f4 b4">B-06</h4></div>
+                <div class="item2 shadow"><h4 class="f4 b4">B-07</h4></div>
+                <div class="item2 shadow"><h4 class="f4 b4">B-08</h4></div>
+                <div class="item2 shadow"><h4 class="f4 b4">B-09</h4></div>
+                <div class="item2 shadow"><h4 class="f4 b4">B-10</h4></div>
+
+            </div>
+        </div>
     </div>
+
 </body>
 <script  src="js/jquery-latest.min.js"></script>
 <script src="js/script.js"></script>
