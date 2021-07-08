@@ -21,3 +21,16 @@ $('#F2').on('click', function() {
     reset();
     $('#Main').show();
 });
+
+$('#Logout').on('click', function() {
+    reset();
+    $('#User-inform').show();
+    $('#Login').show();         
+});
+
+
+$('#Lo-btn').on('click', function() {
+    reset();
+    $('#User-inform').show();
+    $('#User').show();         
+});

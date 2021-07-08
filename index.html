@@ -6,23 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>동아리 페스티벌</title>
     <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<div class="bottom-bar shadow">
-    <div class="items" id="F1">
-        <img src="imgs/User.svg" alt="사용자">
-    </div>
-    <div id='F2' class="items" style="border-left: 0.1px solid grey; border-right: 0.1px solid grey;">
-        <img src="imgs/Home.svg" alt="부스목록">
-    </div>
-    <div class="items" id="F3">
-        <img src="imgs/User.svg" alt="지도">
-    </div>
-
-    
-</div>
 <body>
-
+    <div class="bottom-bar shadow">
+        <div class="items" id="F1">
+            <img src="imgs/User.svg" alt="사용자">
+        </div>
+        <div id='F2' class="items" style="border-left: 0.1px solid grey; border-right: 0.1px solid grey;">
+            <img src="imgs/Home.svg" alt="부스목록">
+        </div>
+        <div class="items" id="F3">
+            <img src="imgs/User.svg" alt="지도">
+        </div>
+    
+        
+    </div>
     <div id="User-inform">
         <div class="img shadow f15 b6">?</div>
         <h1 class="name">사용자 로그인</h1>
@@ -38,7 +37,7 @@
              <input type="password" placeholder="비밀번호를 입력하세요.">
             </div>
         </div><br><br><br>
-        <button class="login-btn b6 f3 shadow">Login</button>
+        <button class="login-btn b6 f3 shadow" id="Lo-btn">Login</button>
     </div>
 
 
@@ -67,16 +66,23 @@
 
         </span><br>
         <label class='f3' style="margin-left: 20px;">로그아웃</label><div style="height: 5px;"></div>
-        <div class="box shadow blur" style=" background-color: red;">
+        <div class="box shadow blur" style=" background-color: red;" id="Logout">
             <h4 style="text-align: center; color:white;">로그아웃</h4>
         </div>
         <div style="height: 90px;"></div>
     </div>
 
     <div id="Main">
-        <h1 class='f5 b7 title'>동아리 페스티벌<br><span class="b1">2021</span></h1>
+        <h1 class='f5 b7 title'>동아리 페스티벌<br><span class="b1">2021</span></h1><br>
+        <div class="box shadow blur">
+            <div class="sample_img"></div>
+            <div class="sub">
+                <h2 class="f5 b5">부스명</h2>
+            </div>
+        </div>
+
     </div>
 </body>
-<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script src="script.js"></script>
+<script  src="js/jquery-latest.min.js"></script>
+<script src="js/script.js"></script>
 </html>
