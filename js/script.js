@@ -7,15 +7,12 @@ function reset() {
 }
 
 
-$('#Map2').hide();
-reset();
-$('#Map').show();
-$('#Map1').show();
+reset();;
+$('#Login').show();
 
 
 $('#F1').on('click', function() {
     reset();
-    $('#User-inform').show();
     $('#Login').show();
 });
 
@@ -31,14 +28,17 @@ $('#F3').on('click', function() {
 
 $('#Logout').on('click', function() {
     reset();
-    $('#User-inform').show();
     $('#Login').show();         
+    $('.bottom-bar').css('bottom', '');
+    $('.background').css('height', '');
+    $('.title').css('text-align', '');
 });
+
 
 $('#Lo-btn').on('click', function() {
     reset();
-    $('#User-inform').show();
-    $('#User').show();         
+    $('#Main').show();      
+    $('.background').css('height', '78%');
 });
 
 
