@@ -33,7 +33,7 @@ $('#Record').on('click', function() {
 $('#Maps').on('click', function() {
     Maps();
 });
-$('.box').on('click', function() {
+$('#List').on('click', function() {
     Open(this);
 });
 $('.close').on('click', function() {
