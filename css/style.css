@@ -9,6 +9,14 @@ body * {
     -webkit-font-smoothing: antialiased;
 }
 
+.t-dot {
+    width: 20px;
+    position: absolute;
+    height: 20px;
+    z-index: 100;
+    right: 20px;
+    top:20px;
+}
 
 .background {
     width: 100vw;
@@ -25,6 +33,13 @@ body * {
     margin-top: 80px;
     color:white;
     margin-bottom: 10px;
+}
+
+.booth-text {
+    margin-left: 20px;
+    margin-top: 30px;
+    color:white;
+    margin-bottom: 30px;
 }
 
 .title {
@@ -79,22 +94,41 @@ body * {
     overflow: hidden;
 }
 
+
+.half-box * {
+    display: inline-block;
+}
+
+.half-box img {
+    width: 50px;
+    height: 50px;
+}
+
+.half-box > h3 {
+    margin-bottom: 10px;
+}
+
+
 .half-box {
+    text-align: center;
     width: 90%;
     background-color: rgba(250, 250, 250, 1);
     border-radius: 20px;
     padding: 20px 5%;
-    margin-top: 20px;
+    height: 60%;
     float: left;
 }
 
 .grid {
-    gap: 25px;
+    margin-top: 20px;
+    column-gap: 15px;
     display: grid;
+    height: 400px;
     grid-template-columns: repeat(2, 1fr);
     width: 90%;
-    margin-left: 25px;
-    height: 400px;
+    position: relative;
+    left: 50%;
+    margin-left: -45%;
 }
 
 
@@ -109,6 +143,7 @@ body * {
     width: 80%;
     position: relative;
     left: 50%;
+    margin-bottom: 20px;
     margin-left: -45%;
     background-color: rgba(250, 250, 250, 1);
     border-radius: 20px;
@@ -149,16 +184,13 @@ hr {
     background-color: red;
     border-radius: 10px;
     display: inline-block;
+    float: left;
 }
 
 .sub {
     margin-left: 20px;
     margin-bottom: 10px;
     margin-top: -5px;
-}
-
-.sample_img > img {
-    width: 100%;
 }
 
 .white {
@@ -175,8 +207,51 @@ hr {
     height: 450px;
     gap: 5px;
     padding: 20px 5%;
-    background-color: rgb(235, 235, 235);
     border-radius: 10px;
+}
+
+hr {
+    width: 90%;
+    height: 5px;
+    position: relative;
+    left: 50%;
+    margin-left: -50%;
+    border: 0px;
+    border-radius: 20px;
+    background-color: #6337FF;
+    margin-top: 5px;
+
+}
+
+.booth-img {
+    width: 90%;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.booth-full > p {
+    width: 90%;
+    margin-top: 10px;
+}
+
+.booth-full {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    padding: 5%;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+}
+
+.close {
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    filter: invert(0.8);
 }
 
 .map2-grid {
@@ -187,8 +262,8 @@ hr {
     height: 450px;
     gap: 5px;
     padding: 20px 5%;
-    background-color: rgb(235, 235, 235);
     border-radius: 10px;
+    z-index: 1000;
 }
 
 select {
@@ -218,10 +293,15 @@ select {
     height: 100px;
 }
 
+.stat > img {
+    float: right;
+    margin-top: -80px;
+}
+
 
 .help {
     width: 40vw;
-    height: 140px;
+    height: 120px;
     border-radius: 20px;
     background-color: rgb(19, 219, 136);
     border: 0px;
@@ -243,7 +323,7 @@ select {
 
 .login-btn {
     width: 40vw;
-    height: 140px;
+    height: 120px;
     border-radius: 20px;
     right: 25px;
     border: 0px;
