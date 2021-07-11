@@ -1,44 +1,42 @@
-function reset() {
-    $('#Login').hide();
-    $('#User').hide();
-    $('#User-inform').hide();  
-    $('#Main').hide();
-    $('#Map').hide();
-    $('#Box').hide();
-}
-
-
-reset();
+$('.Box-f').hide();
 $('#Map2').hide();
-Login();
 
-
-
-
-$('#Lo-btn').on('click', function() {
-    Main();
-});
 $('.t-dot').on('click', function() {
-    Menu();
-});
-$('#Back').on('click', function() {
-    Main();
+    location.href="Menu.html";
 });
 $('#Logout').on('click', function() {
-    Login();
+    location.href="index.html";
 });
-$('#Record').on('click', function() {
-    alert('미구현');
+$('#Lo-btn').on('click', function() {
+    location.href="Booth.html";
+});
+$('#Back').on('click', function() {
+    location.href="Booth.html";
 });
 $('#Maps').on('click', function() {
-    Maps();
+    location.href="Map.html";
 });
-$('#List').on('click', function() {
-    Open(this);
+$('#Record').on('click', function() {
+    location.href="History.html";
 });
-$('.close').on('click', function() {
-    $('#Box').hide();
+$('#Ranking').on('click', function() {
+    location.href="Ranking.html";
 });
+
+
+
+$(document).on('click', '.close',function() {
+    $('.booth-full').hide();
+});
+
+$(document).on('click', '.List',function() {
+    $('.booth-full').show();
+    console.log(1);
+});
+
+
+
+
 
 
 function Open(e) {
@@ -50,11 +48,7 @@ function Maps() {
     $('.background').css('height', '80%');
     $('#Map').show();
 }
-function Login() {
-    reset();
-    $('.background').css('height', '');
-    $('#Login').show();
-}
+
 
 function Main() {
     reset();
@@ -71,13 +65,9 @@ function Menu() {
 function select(e) {
     console.log(e.value);
     if (e.value == 0) {
-        reset();
-        $('#Map').show();
         $('#Map1').show();
         $('#Map2').hide();
     } else {
-        reset();
-        $('#Map').show();
         $('#Map2').show();
         $('#Map1').hide();
     }
