@@ -336,6 +336,20 @@ select {
     bottom: 0px;
 }
 
+.btn-div {
+    width: 100vw;
+    height: 40%;
+    display: block;
+    background-color: black;
+    left: 0px;
+    position: absolute;
+    bottom: 10%;
+}
+
+.btn-sel {
+    
+}
+
 .help {
     width: 40vw;
     height: 120px;

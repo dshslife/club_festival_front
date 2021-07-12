@@ -1,5 +1,5 @@
 var qrcode = new QRCode(document.getElementById("qrcode"), {
-    text: "http://web-inf.tistory.com/",
+    text: "하진수",
     width: 80,
     height: 80,
     colorDark : "#000000",
