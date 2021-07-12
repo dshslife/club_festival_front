@@ -72,3 +72,6 @@ function select(e) {
         $('#Map1').hide();
     }
 }
+
+
+

@@ -1,6 +1,7 @@
 body {
     background-color: #6337FF;
     max-width: 700px;
+    overflow: hidden;
 }
 body * {
     font-family: 'Gothic A1', sans-serif;
@@ -39,7 +40,9 @@ body * {
     margin-left: 20px;
     margin-top: 30px;
     color:white;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    position: relative;
+    bottom: 0px;
 }
 
 .title {
@@ -205,6 +208,7 @@ hr {
     grid-template-rows: repeat(7, 1fr);
     width: 90%;
     height: 450px;
+    overflow: scroll;
     gap: 5px;
     padding: 20px 5%;
     border-radius: 10px;
@@ -255,11 +259,12 @@ hr {
 }
 
 .map2-grid {
+    overflow: scroll;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(11, 1fr);
     width: 90%;
-    height: 450px;
+    height: 400px;
     gap: 5px;
     padding: 20px 5%;
     border-radius: 10px;
@@ -322,12 +327,6 @@ select {
     margin-top: 30px;
     height: 100px;
 }
-
-.stat > img {
-    float: right;
-    margin-top: -80px;
-}
-
 
 .help {
     width: 40vw;
