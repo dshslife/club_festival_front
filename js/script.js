@@ -5,7 +5,7 @@ $('.t-dot').on('click', function() {
     location.href="Menu.html";
 });
 $('#Logout').on('click', function() {
-    location.href="index.html";
+    location.href="/logout";
 });
 $('#Lo-btn').on('click', function() {
     location.href="Booth.html";
