@@ -25,15 +25,6 @@ $('#Ranking').on('click', function() {
 
 
 
-$(document).on('click', '.close',function() {
-    $('.booth-full').hide();
-});
-
-$(document).on('click', '.List',function() {
-    $('.booth-full').show();
-});
-
-
 
 
 

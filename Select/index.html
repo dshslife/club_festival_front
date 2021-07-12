@@ -12,31 +12,29 @@
 </head>
 <body>
     <div class="background ani" style="height: 50%;"></div>
-        
     <h3 class="b9 f4 title ani" style="color:white; text-align: left; margin-top:20px">동아리 <span class="b2">페스티벌</span></h3>
-
     <h1 class="booth-text b8 f10">원하는<br>카테고리를<br>선택하세요.</h1>
     
+
+    <form action="/select" method="POST">
     <div class="btn-div">
         <input type="checkbox" id="cb1" onclick="ckbox()">
-        <label for="cb1" class="f4 b6">버튼</label>
+        <label for="cb1" class="f4 b6">과학</label>
         <input type="checkbox" id="cb2" onclick="ckbox()">
-        <label for="cb2" class="f4 b6">버튼</label>
+        <label for="cb2" class="f4 b6">기술</label>
         <input type="checkbox" id="cb3" onclick="ckbox()">
-        <label for="cb3" class="f4 b6">버튼</label><br><br>
+        <label for="cb3" class="f4 b6">영상</label><br><br><br>
         <input type="checkbox" id="cb4" onclick="ckbox()">
-        <label for="cb4" class="f4 b6">버튼</label>
-        <input type="checkbox" id="cb5" onclick="ckbox()">
-        <label for="cb5" class="f4 b6">버튼</label>
-        <input type="checkbox" id="cb6" onclick="ckbox()">
-        <label for="cb6" class="f4 b6">버튼</label>
-    </div>
-    <button class="f4 b7 btn">제출</button>
+        <label for="cb4" class="f4 b6">인문</label>
 
+    </div>
+    <button class="f4 b7 btn ani" id="sub" type="submit" disabled="false">제출</button>
+    </form>
 
 </body>
 <script  src="../js/jquery-latest.min.js"></script>
 <script src="../js/script.js"></script>
 <script src="../js/qr-git.js"></script>
 <script src="../js/qr.js"></script>
+<script src="script.js"></script>
 </html>

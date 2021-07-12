@@ -168,5 +168,8 @@ input[id="cb6"] {
     bottom: 30px;
     left: 50%;
     margin-left: -25%;
-    
+}
+
+.btn:disabled {
+    background-color: rgb(51, 51, 51);
 }
