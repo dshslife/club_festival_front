@@ -328,6 +328,14 @@ select {
     height: 100px;
 }
 
+#Add {
+    height: 600px;
+    width: 100%;
+    overflow: scroll;
+    position: relative;
+    bottom: 0px;
+}
+
 .help {
     width: 40vw;
     height: 120px;
