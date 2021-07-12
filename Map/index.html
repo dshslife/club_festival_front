@@ -11,6 +11,91 @@
     <link rel="stylesheet" href="../css/map1-grid.css">
     <link rel="stylesheet" href="../css/map2-grid.css">
 </head>
+<style>
+    body {
+    background-color: #6337FF;
+    max-width: 700px;
+    overflow: hidden;
+}
+body * {
+    font-family: 'Gothic A1', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.t-dot {
+    width: 20px;
+    position: absolute;
+    height: 20px;
+    z-index: 100;
+    right: 20px;
+    top:20px;
+}
+
+.background {
+    width: 100vw;
+    height: 60%;
+    background-color: rgb(228, 228, 228);
+    position: fixed;
+    z-index: -1;
+    bottom: 0px;
+    left: 0px;
+}
+
+
+.booth-text {
+    margin-left: 20px;
+    margin-top: 30px;
+    color:white;
+    margin-bottom: 10px;
+    position: relative;
+    bottom: 0px;
+}
+
+.title {
+    margin-left: 20px;
+    color:black;
+    margin-top: 20px;
+}
+
+
+.map1-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    width: 90%;
+    height: 450px;
+    overflow: scroll;
+    gap: 5px;
+    padding: 20px 5%;
+    border-radius: 10px;
+}
+
+.map2-grid {
+    overflow: scroll;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    width: 90%;
+    height: 400px;
+    gap: 5px;
+    padding: 20px 5%;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+select {
+    width: 90%;
+    height: 40px;
+    border: 0px;
+    border-radius: 20px;
+    position: relative;
+    background-color: white;
+    left: 50%;
+    margin-left: -45%;
+}
+</style>
 <body>
     <div class="background ani" style="height: 80%;"></div>
     <h3 class="b9 f4 title ani" style="color:white; text-align: left; margin-top:20px">동아리 <span class="b2">페스티벌</span></h3>
