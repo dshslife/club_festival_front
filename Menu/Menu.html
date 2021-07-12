@@ -159,6 +159,17 @@ body * {
 <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="../js/script.js"></script>
 <script src="../js/qr-git.js"></script>
-<script src="qr.js"></script>
+<script>
+var str = 'naver.com'
+
+var qrcode = new QRCode(document.getElementById("qrcode"), {
+    text: str,
+    width: 80,
+    height: 80,
+    colorDark : "#000000",
+    colorLight : "#ffffff",
+    correctLevel : QRCode.CorrectLevel.H
+});
+</script>
 
 </html>
